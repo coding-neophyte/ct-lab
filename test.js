@@ -1,8 +1,10 @@
-// const getName = require('./utils.js');
+const getName = require('./utils.js');
 
 describe('getName', () => {
   it('returns name property of an object', () => {
-    const objName = getName();
+    const obj = { 'firstName': expect.any(String),
+      age: expect.any(Number) };
+    const objName = getName(obj);
+    expect(objName).toEqual(expect.any(String));
   });
-  expect(objName).toEqual('julius');
 });
