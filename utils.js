@@ -1,7 +1,6 @@
-const getName = (obj) => {
-  obj = { 'firstName': 'julius',
-    age: 33 };
-  return obj.firstName;
+const getName = (objName) => {
+  objName['firstName'] = 'julius';
+  return objName.firstName;
 };
 
 module.exports = getName;
