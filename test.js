@@ -4,10 +4,10 @@ const capitalizeFilter = require('./capitalizeFilter.js');
 
 describe('getName', () => {
   it('returns name property of an object', () => {
-    const obj = { 'firstName': expect.any(String),
-      age: expect.any(Number) };
+    const obj = { 'firstName': 'julius',
+      age: 33  };
     const objName = getName(obj);
-    expect(objName).toEqual(expect.any(String));
+    expect(objName).toEqual('julius');
   });
 });
 
@@ -21,8 +21,14 @@ describe('copyPush', () => {
 
 describe('capitalizeFilter', () => {
   it('takes an array of strings capitalize all strings and filter out any string that starts with the letter F/f', () => {
-      const array = ['code', 'cash', 'frequency', 'Fashion'];
+    const array = ['code', 'cash', 'frequency', 'Fashion'];
 
-      expect(capitalizeFilter(array)).toEqual(['CODE', 'CASH']);
+    expect(capitalizeFilter(array)).toEqual(['CODE', 'CASH']);
+  });
+});
+
+describe('fetchQuotes', () => {
+  it('returns a single quote from api', () => {
+
   });
 });
