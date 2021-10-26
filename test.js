@@ -30,5 +30,8 @@ describe('capitalizeFilter', () => {
 describe('fetchQuotes', () => {
   it('returns a single quote from api', () => {
 
+    expect().toEqual({ 'name': expect.any(String),
+      text: expect.any(String),
+      image: expect.any(String) });
   });
 });
