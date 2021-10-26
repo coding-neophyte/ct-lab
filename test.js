@@ -1,6 +1,7 @@
 const getName = require('./getName.js');
 const copyPush = require('./copyPush.js');
 const capitalizeFilter = require('./capitalizeFilter.js');
+const fetchQuotes = require('./fetchQuotes.js');
 
 describe('getName', () => {
   it('returns name property of an object', () => {
@@ -28,10 +29,12 @@ describe('capitalizeFilter', () => {
 });
 
 describe('fetchQuotes', () => {
-  it('returns a single quote from api', () => {
+  it('returns a single quote from api', async () => {
+    const quotes = await fetchQuotes();
 
-    expect().toEqual({ 'name': expect.any(String),
-      text: expect.any(String),
-      image: expect.any(String) });
+
+    expect(quotes).toEqual([[{ character: expect.any(String),
+      image: expect.any(String),
+      quote: expect.any(String) }]]);
   });
 });
