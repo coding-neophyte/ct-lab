@@ -8,3 +8,10 @@ describe('getName', () => {
     expect(objName).toEqual(expect.any(String));
   });
 });
+
+describe('copyPush', () => {
+  it('returns a new array with new item pushed to the end', () => {
+    const newArr = copyPush(newArr);
+
+  });
+});
