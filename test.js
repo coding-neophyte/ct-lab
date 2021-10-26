@@ -1,4 +1,5 @@
 const getName = require('./utils.js');
+const copyPush = require('./utils.js');
 
 describe('getName', () => {
   it('returns name property of an object', () => {
@@ -11,7 +12,8 @@ describe('getName', () => {
 
 describe('copyPush', () => {
   it('returns a new array with new item pushed to the end', () => {
-    const newArr = copyPush(newArr);
+    const arr = [];
+    copyPush(arr);
 
   });
 });

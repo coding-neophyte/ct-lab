@@ -3,4 +3,9 @@ const getName = (objName) => {
   return objName.firstName;
 };
 
-module.exports = getName;
+const copyPush = (arr) => {
+  arr.push();
+  return arr;
+};
+
+module.exports = getName, copyPush;
