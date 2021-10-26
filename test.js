@@ -1,5 +1,5 @@
-const getName = require('./utils.js');
-const copyPush = require('./utils.js');
+const getName = require('./getName.js');
+const copyPush = require('./copyPush.js');
 
 describe('getName', () => {
   it('returns name property of an object', () => {
@@ -12,8 +12,8 @@ describe('getName', () => {
 
 describe('copyPush', () => {
   it('returns a new array with new item pushed to the end', () => {
-    const arr = [];
-    copyPush(arr);
+    const array = [1, 2, 3, 4];
 
+    expect(copyPush(array, 5)).toEqual([1, 2, 3, 4, 5]);
   });
 });
