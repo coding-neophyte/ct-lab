@@ -20,9 +20,9 @@ describe('copyPush', () => {
 });
 
 describe('capitalizeFilter', () => {
-  it('akes an array of strings capitalize all strings and filter out any string that starts with the letter F/f', () => {
-      const array = [''];
+  it('takes an array of strings capitalize all strings and filter out any string that starts with the letter F/f', () => {
+      const array = ['code', 'cash', 'frequency', 'Fashion'];
 
-      expect(capitalizeFilter(array).toEqual(['']));
+      expect(capitalizeFilter(array)).toEqual(['CODE', 'CASH']);
   });
 });
