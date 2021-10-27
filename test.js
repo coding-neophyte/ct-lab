@@ -33,8 +33,8 @@ describe('fetchQuotes', () => {
     const quotes = await fetchQuotes();
 
 
-    expect(quotes).toEqual([[{ character: expect.any(String),
+    expect(quotes).toEqual([[{ name: expect.any(String),
       image: expect.any(String),
-      quote: expect.any(String) }]]);
+      text: expect.any(String) }]]);
   });
 });
